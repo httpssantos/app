@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar QR Code do Técnico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerar QR Code para Avaliação</h1>
+        <p>Digite o seu ID de Técnico para gerar o QR Code:</p>
+
+        <input type="number" id="tecnicoId" placeholder="ID do Técnico (1 a 5)" min="1" max="5" required>
+        <button id="gerarQRCodeBtn">Gerar QR Code</button>
+
+        <div id="qrCode" class="qr-code"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.0/build/qrcode.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
